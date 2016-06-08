@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EAB427E8FBCA79803EF6B3F /* libPods-LJFree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF2A47629139F45BF1BA4E5 /* libPods-LJFree.a */; };
 		56ECEF5C1D07F13500BC5539 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ECEF5B1D07F13500BC5539 /* main.m */; };
 		56ECEF5F1D07F13500BC5539 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ECEF5E1D07F13500BC5539 /* AppDelegate.m */; };
 		56ECEF621D07F13500BC5539 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ECEF611D07F13500BC5539 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CF2A47629139F45BF1BA4E5 /* libPods-LJFree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJFree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D91A405A2D5A9CF25144C05 /* Pods-LJFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJFree.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJFree/Pods-LJFree.release.xcconfig"; sourceTree = "<group>"; };
 		56ECEF571D07F13500BC5539 /* LJFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56ECEF5B1D07F13500BC5539 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56ECEF5D1D07F13500BC5539 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		56ECEF721D07F64E00BC5539 /* LJView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJView.m; sourceTree = "<group>"; };
 		56ECEF741D07FE9100BC5539 /* LJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTableViewController.h; sourceTree = "<group>"; };
 		56ECEF751D07FE9100BC5539 /* LJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTableViewController.m; sourceTree = "<group>"; };
+		A765E89FDBDC973560308788 /* Pods-LJFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJFree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJFree/Pods-LJFree.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EAB427E8FBCA79803EF6B3F /* libPods-LJFree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				56ECEF591D07F13500BC5539 /* LJFree */,
 				56ECEF581D07F13500BC5539 /* Products */,
+				949C028793B03145DAF5E922 /* Pods */,
+				A92009856BB36945A36F4AC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		949C028793B03145DAF5E922 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A765E89FDBDC973560308788 /* Pods-LJFree.debug.xcconfig */,
+				4D91A405A2D5A9CF25144C05 /* Pods-LJFree.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A92009856BB36945A36F4AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CF2A47629139F45BF1BA4E5 /* libPods-LJFree.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56ECEF6E1D07F13500BC5539 /* Build configuration list for PBXNativeTarget "LJFree" */;
 			buildPhases = (
+				AD4CC90BC61726BF473F2C7B /* [CP] Check Pods Manifest.lock */,
 				56ECEF531D07F13500BC5539 /* Sources */,
 				56ECEF541D07F13500BC5539 /* Frameworks */,
 				56ECEF551D07F13500BC5539 /* Resources */,
+				FE8B2782B73290DBB1C94ACF /* [CP] Embed Pods Frameworks */,
+				AB7843E88965D81696907107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB7843E88965D81696907107 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJFree/Pods-LJFree-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4CC90BC61726BF473F2C7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8B2782B73290DBB1C94ACF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJFree/Pods-LJFree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56ECEF531D07F13500BC5539 /* Sources */ = {
@@ -271,6 +346,7 @@
 		};
 		56ECEF6F1D07F13500BC5539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A765E89FDBDC973560308788 /* Pods-LJFree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LJFree/Info.plist;
@@ -282,6 +358,7 @@
 		};
 		56ECEF701D07F13500BC5539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D91A405A2D5A9CF25144C05 /* Pods-LJFree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LJFree/Info.plist;
