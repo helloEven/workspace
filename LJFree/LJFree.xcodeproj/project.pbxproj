@@ -13,6 +13,7 @@
 		56ECEF651D07F13500BC5539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56ECEF631D07F13500BC5539 /* Main.storyboard */; };
 		56ECEF671D07F13500BC5539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56ECEF661D07F13500BC5539 /* Assets.xcassets */; };
 		56ECEF6A1D07F13500BC5539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56ECEF681D07F13500BC5539 /* LaunchScreen.storyboard */; };
+		56ECEF731D07F64E00BC5539 /* LJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ECEF721D07F64E00BC5539 /* LJView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		56ECEF661D07F13500BC5539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56ECEF691D07F13500BC5539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56ECEF6B1D07F13500BC5539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56ECEF711D07F64E00BC5539 /* LJView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJView.h; sourceTree = "<group>"; };
+		56ECEF721D07F64E00BC5539 /* LJView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				56ECEF5E1D07F13500BC5539 /* AppDelegate.m */,
 				56ECEF601D07F13500BC5539 /* ViewController.h */,
 				56ECEF611D07F13500BC5539 /* ViewController.m */,
+				56ECEF711D07F64E00BC5539 /* LJView.h */,
+				56ECEF721D07F64E00BC5539 /* LJView.m */,
 				56ECEF631D07F13500BC5539 /* Main.storyboard */,
 				56ECEF661D07F13500BC5539 /* Assets.xcassets */,
 				56ECEF681D07F13500BC5539 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56ECEF731D07F64E00BC5539 /* LJView.m in Sources */,
 				56ECEF621D07F13500BC5539 /* ViewController.m in Sources */,
 				56ECEF5F1D07F13500BC5539 /* AppDelegate.m in Sources */,
 				56ECEF5C1D07F13500BC5539 /* main.m in Sources */,
